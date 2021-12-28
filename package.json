@@ -1,0 +1,57 @@
+{
+  "name": "paulduddy",
+  "version": "1.0.0",
+  "description": "paulduddyvehiclesalesandfinance.co.uk",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asteady85/paulduddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asteady85/paulduddy/issues"
+  },
+  "homepage": "https://github.com/asteady85/paulduddy#readme",
+  "scripts": {
+    "start:dev-server": "parcel serve src/index.html --no-cache",
+    "start": "rm -rf dist && npm run start:dev-server",
+    "build": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "parcel": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "@parcel/bundler-default": {
+    "minBundles": 1,
+    "minBundleSize": 3000,
+    "maxParallelRequests": 20
+  }
+}
