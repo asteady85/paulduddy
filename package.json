@@ -2,7 +2,7 @@
   "name": "paulduddy",
   "version": "1.0.0",
   "description": "paulduddyvehiclesalesandfinance.co.uk",
-  "main": "index.js",
+  "default": "dist/index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asteady85/paulduddy.git"
@@ -12,11 +12,14 @@
   "bugs": {
     "url": "https://github.com/asteady85/paulduddy/issues"
   },
-  "homepage": "https://github.com/asteady85/paulduddy#readme",
+  "homepage": "http://paulduddyvehiclesalesandfinance.co.uk/new/",
   "scripts": {
     "start:dev-server": "parcel serve src/index.html --no-cache",
     "start": "rm -rf dist && npm run start:dev-server",
-    "build": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist"
+    "prebuild": "rm -rf dist",
+    "build": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist",
+    "prebuild:production": "rm -rf dist",
+    "build:production": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist --public-url ./"
   },
   "browserslist": {
     "production": [
@@ -39,7 +42,9 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
-    "parcel": "^2.0.1"
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "^2.0.1",
+    "sass": "^1.45.1"
   },
   "babel": {
     "presets": [
