@@ -17,10 +17,10 @@ const App = () => {
         <Header />
         <Routes>
           <Route
-            exact path='/help'
+            exact path='/new/help'
             element={<Help />}
           />
-          <Route path='/' element={<Home />} />
+          <Route path='/new/' element={<Home />} />
         </Routes>
         <Footer />
       </BrowserRouter>

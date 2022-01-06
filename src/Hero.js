@@ -2,10 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero text-center">
       <div className="hero--content">
-        <h2>Some hero header heading</h2>
-        <p>Some hero description of the thing it is showing on the screen!!!!</p>
+        <h1 className='brand-dark-colour'>Supplying a friendly, competitive service for over 30 years experience</h1>
+        <p>Specialising in all Marques of Cars and Light Commercials</p>
       </div>
     </div>
   )
