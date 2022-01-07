@@ -21,11 +21,16 @@ a {
   max-width: $max-browser-width;
   margin: 0 auto;
   color: $text-colour;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 { font-size: 3.2rem; }
-h2 { font-size: 2.6rem; font-family: 'ocean-sans-std', sans-serif; text-transform: uppercase;  }
+h2 { font-size: 2.6rem; font-family: 'Bebas Neue', cursive; text-transform: uppercase;  }
 h3 { font-size: 2rem; }
+
+h1 span, h2 span, h3 span {
+  border-bottom: 2px solid $primary-colour;
+}
 
 .content {
   width: 100%;
@@ -33,8 +38,7 @@ h3 { font-size: 2rem; }
   position: relative;
 
   &.feature {
-    background-color: $secondary-colour;
-    color: white;
+    background-color: #54a27e57;
   }
 
   // background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.3) 100%);
@@ -140,6 +144,26 @@ h3 { font-size: 2rem; }
     padding: 0.8rem 0.8rem;
     text-align: left;
   }
+}
+
+.round-icon{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  span.round-icon--wrapper {
+    background: $primary-colour;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .round-icon--content {}
 }
 
 @media only screen and (min-width: $small-device) {
