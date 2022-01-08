@@ -9,6 +9,7 @@ import Header from './Header'
 import Help from './pages/Help'
 import Home from './pages/Home'
 import Footer from './Footer'
+import ServiceContent from './pages/ServiceContent'
 
 const App = () => {
   return (
@@ -20,7 +21,10 @@ const App = () => {
             exact path='/new/help'
             element={<Help />}
           />
-          <Route path='/new/' element={<Home />} />
+          <Route path='/new' element={<Home />} />
+          <Route path='/new/services/*' element={<ServiceContent />} />
+
+          <Route path='*' element={<Home />} /> {/* 404 */}
         </Routes>
         <Footer />
       </BrowserRouter>
