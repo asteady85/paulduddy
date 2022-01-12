@@ -1,11 +1,11 @@
 import React from 'react'
+import './scss/SubHero.scss'
 
-const SubHero = () => {
+const SubHero = ({ children, backgroundImage }) => {
   return (
-    <div className="hero text-center">
-      <div className="hero--content">
-        <h1 className='brand-dark-colour'>Supplying a friendly, competitive service for over 30 years experience</h1>
-        <p>Specialising in all Marques of Cars and Light Commercials</p>
+    <div className="sub-hero text-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="sub-hero--content">
+        {children}
       </div>
     </div>
   )

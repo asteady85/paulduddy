@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const ServicePartExchange = () => {
   return (
     <>
-      <p>Service Part Exchange</p>
+      <p>Part exchanges always welcome.</p>
+      <p>Also used cars required we can also offer a sale or return service.</p>
     </>
   )
 }

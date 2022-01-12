@@ -10,6 +10,7 @@ import Help from './pages/Help'
 import Home from './pages/Home'
 import Footer from './Footer'
 import ServiceContent from './pages/ServiceContent'
+import About from './pages/About'
 
 const App = () => {
   return (
@@ -18,12 +19,12 @@ const App = () => {
         <Header />
         <Routes>
           <Route
-            exact path='/new/help'
+            exact path='/help'
             element={<Help />}
           />
-          <Route path='/new' element={<Home />} />
-          <Route path='/new/services/*' element={<ServiceContent />} />
-
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services/*' element={<ServiceContent />} />
           <Route path='*' element={<Home />} /> {/* 404 */}
         </Routes>
         <Footer />

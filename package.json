@@ -19,7 +19,7 @@
     "prebuild": "rm -rf dist",
     "build": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist",
     "prebuild:production": "rm -rf dist",
-    "build:production": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist --public-url ./"
+    "build:production": " parcel build src/index.html --no-cache --no-source-maps --no-scope-hoist"
   },
   "browserslist": {
     "production": [
