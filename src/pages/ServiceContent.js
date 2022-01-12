@@ -2,7 +2,7 @@ import React from 'react'
 import {
   Routes,
   Route,
-  useParams, Link
+  useParams
 } from 'react-router-dom'
 import SubPage from './SubPage'
 import { pageDetails } from './services/page-details'
@@ -14,18 +14,18 @@ import ServiceLeasing from './services/ServiceLeasing'
 import ServiceStraightCashPurchase from './services/ServiceStraightCashPurchase'
 import ServiceLeasePurchasing from './services/ServiceLeasePurchasing'
 import ServiceContractPurchase from './services/ServiceContractPurchase'
+import Breadcrumbs from '../modules/breadcrumbs'
+import ServicesNav from './services/nav'
 
 const ServiceContent = () => {
   const params = useParams()
+  const nav = () => (<ServicesNav />)
 
   return (
-    <SubPage heroContent={pageDetails(params['*']).heroContent()} heroBackgroundImage={pageDetails(params['*']).backgroundImage}>
+    <SubPage heroContent={pageDetails(params['*']).heroContent()} heroBackgroundImage={pageDetails(params['*']).backgroundImage} NavContent={nav}>
       <div className='content'>
         <div className='content--wrapper'>
-          <div className='breadcrumbs'>
-            <h2><span>Services</span></h2>
-            {pageDetails(params['*']).pageTitle()}
-          </div>
+          <Breadcrumbs title='Services' subTitle={pageDetails(params['*']).pageTitle} />
           <Routes>
             <Route exact path='/' element={<ServiceHome />} />
             <Route exact path='/contract-purchase' element={<ServiceContractPurchase />} />

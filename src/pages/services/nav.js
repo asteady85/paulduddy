@@ -1,20 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import SubpageNavigation from '../../modules/subpage-navigation'
+import '../../scss/subpage-navigation.scss'
 
 const ServicesNav = () => {
+  const params = useParams()
+  const currentPage = params['*']
+  const basePath = '/services/'
+  const nav = [
+    { title: 'All Services', path: '' },
+    { title: 'Contract Purchase', path: 'contract-purchase' },
+    { title: 'Lease Purchase or Hire Purchase', path: 'lease-purchasing' },
+    { title: 'Straight Cash Purchase', path: 'straight-cash-purchase' },
+    { title: 'Leasing', path: 'leasing' },
+    { title: 'Contract Hire', path: 'contract-hire' },
+    { title: 'Part Exchanges', path: 'part-exchange' },
+    { title: 'Fair Wear and Tear Guide', path: 'wear-and-tear' }
+  ]
   return (
-    <nav className="nav">
-      <ul>
-        <li><Link to="/services/">All Services</Link></li>
-        <li><Link to="/services/contract-purchase">Contract Purchase</Link></li>
-        <li><Link to="/services/lease-purchasing">Lease Purchase or Hire Purchase</Link></li>
-        <li><Link to="/services/straight-cash-purchase">Straight Cash Purchase</Link></li>
-        <li><Link to="/services/leasing">Leasing</Link></li>
-        <li><Link to="/services/contract-hire">Contract Hire</Link></li>
-        <li><Link to="/services/part-exchange">Part Exchanges</Link></li>
-        <li><Link to="/services/wear-and-tear">Fair Wear and Tear Guide</Link></li>
-      </ul>
-    </nav>
+    <SubpageNavigation navArray={nav} basePath={basePath} currentPage={currentPage} />
   )
 }
 

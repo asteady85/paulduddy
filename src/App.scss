@@ -22,13 +22,14 @@ a {
   margin: 0 auto;
   color: $text-colour;
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 h1 { font-size: 3.2rem; }
 h2 { font-size: 2.6rem; font-family: 'Bebas Neue', cursive; text-transform: uppercase;  }
 h3 { font-size: 2rem; font-family: 'Bebas Neue', cursive; text-transform: uppercase; }
 
-h1, h2, h3 { margin-top: 0; }
+h1, h2, h3 { margin-top: 0; line-height: 1.7em; }
 h1 span, h2 span, h3 span {
   border-bottom: 2px solid $primary-colour;
 }

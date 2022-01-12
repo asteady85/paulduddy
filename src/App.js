@@ -2,15 +2,16 @@ import React from 'react'
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  Navigate
 } from 'react-router-dom'
-import './App.scss'
 import Header from './Header'
-import Help from './pages/Help'
+import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Footer from './Footer'
 import ServiceContent from './pages/ServiceContent'
 import About from './pages/About'
+import './App.scss'
 
 const App = () => {
   return (
@@ -20,12 +21,16 @@ const App = () => {
         <Routes>
           <Route
             exact path='/help'
-            element={<Help />}
+            element={<Contact />}
           />
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services/*' element={<ServiceContent />} />
-          <Route path='*' element={<Home />} /> {/* 404 */}
+
+          {/* Redirects from old website */}
+          <Route path='/purchasing' element={<Navigate to="/services/contract-hire" />} />
+          {/* 404 */}
+          <Route path='*' element={<Home />} />
         </Routes>
         <Footer />
       </BrowserRouter>

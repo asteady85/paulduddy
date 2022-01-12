@@ -1,12 +1,13 @@
 const React = require('react')
 import CarForecourt from '../../images/cars-forecourt.jpg'
+import CarKey from '../../images/car-key.jpg'
 
 const pageDetails = (page) => {
   switch (page) {
     case 'contract-purchase':
       return {
-        backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Personal or Business Contract Purchase</h3>),
+        backgroundImage: CarKey,
+        pageTitle: 'Personal or Business Contract Purchase',
         heroContent: () => (
           <>
             <p>Contract Purchase......</p>
@@ -16,7 +17,7 @@ const pageDetails = (page) => {
     case 'lease-purchasing':
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Lease Purchase or Hire Purchase</h3>),
+        pageTitle: 'Lease Purchase or Hire Purchase',
         heroContent: () => (
           <>
             <p>Lease purchase......</p>
@@ -26,7 +27,7 @@ const pageDetails = (page) => {
     case 'straight-cash-purchase':
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Straight Cash Purchase</h3>),
+        pageTitle: 'Straight Cash Purchase',
         heroContent: () => (
           <>
             <p>Straight Cash Purchase......</p>
@@ -36,7 +37,7 @@ const pageDetails = (page) => {
     case 'leasing':
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Leasing</h3>),
+        pageTitle: 'Leasing',
         heroContent: () => (
           <>
             <p>Leasing......</p>
@@ -46,7 +47,7 @@ const pageDetails = (page) => {
     case 'contract-hire':
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Contract Hire</h3>),
+        pageTitle: 'Contract Hire',
         heroContent: () => (
           <>
             <p>Contract Hire......</p>
@@ -56,7 +57,7 @@ const pageDetails = (page) => {
     case 'part-exchange':
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Part Exchanges Welcome</h3>),
+        pageTitle: 'Part Exchanges Welcome',
         heroContent: () => (
           <>
             <p>Part exchange your old car to go towards your new one</p>
@@ -66,7 +67,7 @@ const pageDetails = (page) => {
     case 'wear-and-tear':
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<h3>Fair Wear and Tear Guide</h3>),
+        pageTitle: 'Fair Wear and Tear Guide',
         heroContent: () => (
           <>
             <p>Fair Wear and Tear Guide......</p>
@@ -76,7 +77,7 @@ const pageDetails = (page) => {
     default:
       return {
         backgroundImage: CarForecourt,
-        pageTitle: () => (<></>),
+        pageTitle: '',
         heroContent: () => (
           <>
             <p>All our services</p>

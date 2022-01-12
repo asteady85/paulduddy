@@ -10,53 +10,6 @@
   .sub-page-wrapper--nav {
     background-color: $primary-dark-colour;
     color: white;
-
-    nav {
-      width: 100%;
-
-      ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-
-        li {
-          display: block;
-          transform: none;
-          padding: 0.5rem 1rem;
-          text-transform: uppercase;
-
-          a {
-            color: white;
-
-            &:hover {
-              text-transform: uppercase;
-              color: black;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .sub-page-wrapper--content {
-    .breadcrumbs {
-      h2, h3 {
-        display: inline-block;
-        margin: 0;
-      }
-      h3 {
-        font-family: 'Bebas Neue';
-
-        &:before {
-          content: '>';
-          padding: 0 12px;
-          display: inline-block;
-        }
-      }
-    }
   }
 }
 

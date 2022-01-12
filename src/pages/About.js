@@ -1,14 +1,18 @@
 import React from 'react'
-import Hero from '../Hero'
 import { Link } from 'react-router-dom'
+import SubHero from '../SubHero'
+import backgroundImage from '../images/car-key.jpg'
 
 const About = () => {
+  const heroContent = () => (<p>With over 30 years in the business, specialising in most makes of cars and light commercial vehicles</p>)
   return (
     <>
-      <Hero />
-      <div className='content tall'>
+      <SubHero backgroundImage={backgroundImage}>
+        {heroContent()}
+      </SubHero>
+      <div className='content'>
         <div className='content--wrapper'>
-          <h1>About Paul Duddy T/A Paul Duddy Vehicle Sales and Finance</h1>
+          <h2><span>About Paul Duddy Vehicle Sales and Finance</span></h2>
           <p>Paul Duddy has been employed in the motor industry for over 30 years supplying vehicles for business and on a personal basis.</p>
           <p>Now specialises in sourcing most makes of cars and light commercial vehicles to suit ones individual requirements, whether it is for <Link to="/services/straight-cash-purchase">Outright Purchase</Link> or for any particular <Link to="/services/contract-purchase">Finance Option</Link>.</p>
           <p>Even though the main core of the business is for the supply of new vehicles we are also able to source a wide range of used vehicles.</p>
