@@ -23,13 +23,13 @@ const Footer = () => {
               <div className='col'>
                 <h3>Useful Links</h3>
                 <ul>
-                  <li><a href="/initial-disclosure.html">Initial Disclosure Document</a></li>
+                  <li><a href="/initial-disclosure">Initial Disclosure Document</a></li>
                   <li><Link to="/services/wear-and-tear">Wear &amp; Tear Guide</Link></li>
-                  <li><a href="/treating-customers-fairly.html">Treating Customers Fairly</a></li>
-                  <li><a href="/complaint-handling-procedure.html">Complaints</a></li>
-                  <li><a href="/terms.html">Terms &amp; Conditions</a></li>
-                  <li><a href="/privacy.html">Privacy Policy</a></li>
-                  <li><a href="/bvrla-code-of-conduct.html">BVRLA Code of Conduct</a></li>
+                  <li><a href="/treating-customers-fairly">Treating Customers Fairly</a></li>
+                  <li><a href="/complaint-handling-procedure">Complaints</a></li>
+                  <li><a href="/terms">Terms &amp; Conditions</a></li>
+                  <li><a href="/privacy-policy">Privacy Policy</a></li>
+                  <li><a href="/bvrla-code-of-conduct">BVRLA Code of Conduct</a></li>
                 </ul>
               </div>
             </div>

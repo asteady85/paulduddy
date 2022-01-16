@@ -17,6 +17,16 @@
     flex-direction: column;
     width: 100%;
 
+    img {
+      width: 90vw;
+      max-width: 450px;
+    }
+    img.desktop {
+      display: none;
+      max-width: 600px;
+      width: 55vw;
+    }
+
     .contact-numbers {
       display: none;
       text-align: right;
@@ -58,6 +68,10 @@
       flex-direction: row;
       font-size: 1.7rem;
 
+      img.mobile {
+        width: 40vw;
+      }
+
       .contact-numbers{
         display: block;
         font-size: 1.4rem;
@@ -85,6 +99,21 @@
           }
 
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $medium-device) {
+  .site-header {
+
+    .site-header__wrapper {
+
+      img.mobile {
+        display: none;
+      }
+      img.desktop {
+        display: flex;
       }
     }
   }
