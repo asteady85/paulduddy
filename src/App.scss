@@ -160,6 +160,11 @@ h1 span, h2 span, h3 span {
     background: white;
     color: $primary-dark-colour;
 
+    &:hover {
+      background-color: $primary-dark-colour;
+      color: white;
+    }
+
     .StyledIconBase-ea9ulj-0 {
       height: 2rem;
     }
