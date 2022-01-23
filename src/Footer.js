@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './scss/Footer.scss'
-import {HiPhone} from 'react-icons/all'
+import { PhoneAlt } from '@styled-icons/fa-solid/PhoneAlt'
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
       </footer>
       <div className='mobile-phone--sticky'>
         <a href="tel:01457 862 181">
-          <HiPhone />
+          <PhoneAlt />
           <span>CALL US NOW</span>
         </a>
       </div>

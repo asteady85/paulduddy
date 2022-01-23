@@ -10,7 +10,8 @@ const pageDetails = (page) => {
         pageTitle: 'Personal or Business Contract Purchase',
         heroContent: () => (
           <>
-            <p>Contract Purchase......</p>
+            <h1>Contract Purchase</h1>
+            <p>A fixed monthly payment for personal or business use.</p>
           </>
         )
       }
@@ -20,7 +21,8 @@ const pageDetails = (page) => {
         pageTitle: 'Lease Purchase or Hire Purchase',
         heroContent: () => (
           <>
-            <p>Lease purchase......</p>
+            <h1>Lease Purchase or Hire Purchase</h1>
+            <p>Lease or hire a vehicle where you own it at the end of the agreement</p>
           </>
         )
       }
@@ -30,7 +32,8 @@ const pageDetails = (page) => {
         pageTitle: 'Straight Cash Purchase',
         heroContent: () => (
           <>
-            <p>Straight Cash Purchase......</p>
+            <h1>Straight Cash Purchase</h1>
+            <p>If you prefer to buy a vehicle outright without a contract, we can ensure you get the best deal possible.</p>
           </>
         )
       }
@@ -40,7 +43,8 @@ const pageDetails = (page) => {
         pageTitle: 'Leasing',
         heroContent: () => (
           <>
-            <p>Leasing......</p>
+            <h1>Leasing</h1>
+            <p>Lease a new vehicle for 2 to 5 years, enjoy the benefits with out the hassle of owning it yourself.</p>
           </>
         )
       }
@@ -50,7 +54,8 @@ const pageDetails = (page) => {
         pageTitle: 'Contract Hire',
         heroContent: () => (
           <>
-            <p>Contract Hire......</p>
+            <h1>Contract Hire</h1>
+            <p>Pay for the use of a vehicle for a period of 2 to 5 years without owning it.</p>
           </>
         )
       }
@@ -60,6 +65,7 @@ const pageDetails = (page) => {
         pageTitle: 'Part Exchanges Welcome',
         heroContent: () => (
           <>
+            <h1>Part Exchange</h1>
             <p>Part exchange your old car to go towards your new one</p>
           </>
         )
@@ -70,7 +76,8 @@ const pageDetails = (page) => {
         pageTitle: 'Fair Wear and Tear Guide',
         heroContent: () => (
           <>
-            <p>Fair Wear and Tear Guide......</p>
+            <h1>Wear and Tear Guide</h1>
+            <p>Understand what this means for each type of contract we offer</p>
           </>
         )
       }
@@ -80,7 +87,8 @@ const pageDetails = (page) => {
         pageTitle: '',
         heroContent: () => (
           <>
-            <p>All our services</p>
+            <h1>Our Services</h1>
+            <p>We offer a wide range of services to suit your individual needs</p>
           </>
         )
       }

@@ -151,6 +151,19 @@ h1 span, h2 span, h3 span {
     padding: 0.8rem 0.8rem;
     text-align: left;
   }
+
+  a.some-module--link {
+    font-weight: bold;
+    border: 2px solid $primary-dark-colour;
+    padding: 10px;
+    border-radius: 11px;
+    background: white;
+    color: $primary-dark-colour;
+
+    .StyledIconBase-ea9ulj-0 {
+      height: 2rem;
+    }
+  }
 }
 
 .round-icon{
@@ -169,6 +182,10 @@ h1 span, h2 span, h3 span {
     justify-content: center;
     align-items: center;
     color: white;
+
+    .StyledIconBase-ea9ulj-0 {
+      height: 4rem;
+    }
   }
   .round-icon--content {
     padding-top: 20px;

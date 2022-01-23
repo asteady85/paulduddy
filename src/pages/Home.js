@@ -1,9 +1,9 @@
 import React from 'react'
 import Hero from '../Hero'
 import HomeLink from '../modules/home-link'
-import { IoCarSportSharp } from 'react-icons/io5'
-import { GiReceiveMoney } from 'react-icons/gi'
-import { MdEmojiPeople } from 'react-icons/md'
+import { Handshake } from '@styled-icons/fa-solid/Handshake'
+import { CarAlt } from '@styled-icons/fa-solid/CarAlt'
+import { PoundSign } from '@styled-icons/fa-solid/PoundSign'
 import PromoModule from '../modules/promo-module'
 
 const Home = () => {
@@ -15,23 +15,23 @@ const Home = () => {
           <h2><span>Our Services</span></h2>
           <p>We offer a wide range of services to suit your individual needs whether it be Outright Purchase, Part Exchanging or just selling your current vehicle. All our services provide you with the best customer service at the most competitive prices.</p>
           <div className='grid grid-gap grid--col3'>
-            <HomeLink title='Contract Purchase'>
-              <p>This is the description I need to</p>
+            <HomeLink title='Contract Purchase' link='/services/contract-purchase'>
+              <p>A fixed monthly payment for personal or business use.</p>
             </HomeLink>
-            <HomeLink title='Lease or Hire Purchase'>
-              <p>This is the description I need to</p>
+            <HomeLink title='Lease or Hire Purchase' link='/services/lease-purchasing'>
+              <p>Lease or hire a vehicle where you own it at the end of the agreement</p>
             </HomeLink>
-            <HomeLink title='Straight Cash Purchase'>
-              <p>This is the description I need to</p>
+            <HomeLink title='Straight Cash Purchase' link='/services/straight-cash-purchase'>
+              <p>If you prefer to buy a vehicle outright without a contract, we can ensure you get the best deal possible.</p>
             </HomeLink>
-            <HomeLink title='Leasing'>
-              <p>This is the description I need to</p>
+            <HomeLink title='Leasing' link='/services/leasing'>
+              <p>Lease a new vehicle for 2 to 5 years, enjoy the benefits with out the hassle of owning it yourself.</p>
             </HomeLink>
-            <HomeLink title='Contract Hire'>
-              <p>This is the description I need to</p>
+            <HomeLink title='Contract Hire' link='/services/contract-hire'>
+              <p>Pay for the use of a vehicle for a period of 2 to 5 years without owning it.</p>
             </HomeLink>
-            <HomeLink title='Part Exchanges Welcome'>
-              <p>This is the description I need to</p>
+            <HomeLink title='Part Exchanges Welcome' link='/services/part-exchange'>
+              <p>Why not part exchange your current vehicle to go towards your new one.</p>
             </HomeLink>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Home = () => {
             <div className='col'>
               <div className='round-icon'>
                 <span className='round-icon--wrapper'>
-                  <GiReceiveMoney />
+                  <PoundSign />
                 </span>
                 <div className='round-icon--content'>
                   Competitive prices everyday
@@ -54,7 +54,7 @@ const Home = () => {
             <div className='col'>
               <div className='round-icon'>
                 <span className='round-icon--wrapper'>
-                  <MdEmojiPeople />
+                  <Handshake />
                 </span>
                 <div className='round-icon--content'>
                   Friendly and helpful
@@ -64,7 +64,7 @@ const Home = () => {
             <div className='col'>
               <div className='round-icon'>
                 <span className='round-icon--wrapper'>
-                  <IoCarSportSharp />
+                  <CarAlt />
                 </span>
                 <div className='round-icon--content'>
                   Great range of new and used cars

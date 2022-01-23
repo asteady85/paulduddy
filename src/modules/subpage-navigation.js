@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {HiMenu} from 'react-icons/all'
+import { Bars } from '@styled-icons/fa-solid/Bars'
 
 const SubPageNavigation = ({navArray, basePath, currentPage}) => {
   const [active, setActive] = React.useState(false)
@@ -13,7 +13,7 @@ const SubPageNavigation = ({navArray, basePath, currentPage}) => {
         className='menu-toggle'
         onClick={() => setActive(!active)}
       >
-        <HiMenu />
+        <Bars />
       </div>
       <ul className={openClass}>
         {
