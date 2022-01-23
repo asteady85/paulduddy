@@ -43,7 +43,7 @@ const TreatingCustomersFairly = () => {
 
           <h3>Complaints</h3>
           <p>In the unlikely event of a client feeling they need to complain, we treat all complaints very seriously and operate within a published Complaints Procedure.</p>
-          <p>Our policy is in line with the current guidance from the FCA and is in line with the principles of the FCA that "a firm must pay due regard to the interests of its customers and treat them fairly".</p>
+          <p>Our policy is in line with the current guidance from the FCA and is in line with the principles of the FCA that "<strong>a firm must pay due regard to the interests of its customers and treat them fairly</strong>".</p>
         </div>
       </div>
     </>
